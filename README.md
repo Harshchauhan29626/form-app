@@ -21,6 +21,24 @@ After creating or pulling the migration, run:
 php artisan migrate
 ```
 
+## Form Submission API Prompt
+
+Use the API endpoint below to submit the form payload to the database:
+
+```bash
+curl -X POST http://localhost:8000/api/submissions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "mobile": "9876543210",
+    "email": "jane@example.com",
+    "city": "Mumbai",
+    "country": "India",
+    "state": "Maharashtra"
+  }'
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
