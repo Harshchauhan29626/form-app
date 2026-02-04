@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Form Submission Migration Prompt
+
+Use the following artisan command to create a migration for the form submissions table:
+
+```bash
+php artisan make:migration create_form_submissions_table
+```
+
+After creating or pulling the migration, run:
+
+```bash
+php artisan migrate
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
