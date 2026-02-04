@@ -9,6 +9,15 @@ use Illuminate\Http\Request;
 
 class FormSubmissionController extends Controller
 {
+    public function index(): JsonResponse
+    {
+        $submissions = FormSubmission::latest()->get();
+
+        return response()->json([
+            'data' => $submissions,
+        ]);
+    }
+
     public function store(Request $request): JsonResponse
     {
         $validated = $request->validate([

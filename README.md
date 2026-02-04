@@ -39,6 +39,12 @@ curl -X POST http://localhost:8000/api/submissions \
   }'
 ```
 
+Fetch saved submissions with:
+
+```bash
+curl http://localhost:8000/api/submissions
+```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
